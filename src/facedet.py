@@ -10,7 +10,6 @@ if __name__ == "__main__":
 
     # Load the pre-trained face detection model from the specified XML file
     # The file contains the Haar Cascade classifier for detecting frontal faces
-  #  face_cascade = cv2.CascadeClassifier('homepirpi_labhaarhaarcascade_frontalface_default.xml')
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     # Open a connection to the camera (default camera index 0)
     cap = cv2.VideoCapture(0)
